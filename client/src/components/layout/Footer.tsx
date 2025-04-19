@@ -28,19 +28,19 @@ export default function Footer() {
           <div className="mb-8 md:mb-0">
             <div className="flex items-center space-x-2 mb-4">
               <span className="text-primary font-montserrat font-black text-2xl">AAA</span>
-              <span className="font-montserrat font-bold">Laptops & More</span>
+              <span className="font-montserrat font-bold text-white">Laptops & More</span>
             </div>
-            <p className="text-gray-400 max-w-xs">Your trusted tech repair solution in Cincinnati. Fast, reliable service at affordable prices.</p>
+            <p className="text-gray-200 max-w-xs">Your trusted tech repair solution in Cincinnati. Fast, reliable service at affordable prices.</p>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="font-montserrat font-bold text-lg mb-4">Quick Links</h3>
+              <h3 className="font-montserrat font-bold text-lg mb-4 text-white">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
                   <a 
                     href="#services" 
-                    className="text-gray-400 hover:text-white transition-all"
+                    className="text-gray-200 hover:text-white transition-all"
                     onClick={(e) => {
                       e.preventDefault();
                       handleNavLinkClick("services");
@@ -52,7 +52,7 @@ export default function Footer() {
                 <li>
                   <a 
                     href="#products" 
-                    className="text-gray-400 hover:text-white transition-all"
+                    className="text-gray-200 hover:text-white transition-all"
                     onClick={(e) => {
                       e.preventDefault();
                       handleNavLinkClick("products");
@@ -64,7 +64,7 @@ export default function Footer() {
                 <li>
                   <a 
                     href="#about" 
-                    className="text-gray-400 hover:text-white transition-all"
+                    className="text-gray-200 hover:text-white transition-all"
                     onClick={(e) => {
                       e.preventDefault();
                       handleNavLinkClick("about");
@@ -76,7 +76,7 @@ export default function Footer() {
                 <li>
                   <a 
                     href="#testimonials" 
-                    className="text-gray-400 hover:text-white transition-all"
+                    className="text-gray-200 hover:text-white transition-all"
                     onClick={(e) => {
                       e.preventDefault();
                       handleNavLinkClick("testimonials");
@@ -89,31 +89,31 @@ export default function Footer() {
             </div>
             
             <div>
-              <h3 className="font-montserrat font-bold text-lg mb-4">Services</h3>
+              <h3 className="font-montserrat font-bold text-lg mb-4 text-white">Services</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-all">Computer Repair</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-all">Virus Removal</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-all">OS Reload</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-all">Custom Builds</a></li>
+                <li><a href="#" className="text-gray-200 hover:text-white transition-all">Computer Repair</a></li>
+                <li><a href="#" className="text-gray-200 hover:text-white transition-all">Virus Removal</a></li>
+                <li><a href="#" className="text-gray-200 hover:text-white transition-all">OS Reload</a></li>
+                <li><a href="#" className="text-gray-200 hover:text-white transition-all">Custom Builds</a></li>
               </ul>
             </div>
             
             <div>
-              <h3 className="font-montserrat font-bold text-lg mb-4">Contact</h3>
+              <h3 className="font-montserrat font-bold text-lg mb-4 text-white">Contact</h3>
               <ul className="space-y-2">
-                <li className="flex items-center text-gray-400">
+                <li className="flex items-center text-gray-200">
                   <i className="fas fa-map-marker-alt w-5 mr-2 text-primary"></i>
                   174 W McMillan St
                 </li>
-                <li className="flex items-center text-gray-400">
+                <li className="flex items-center text-gray-200">
                   <i className="fas fa-phone-alt w-5 mr-2 text-primary"></i>
                   513-221-8333
                 </li>
-                <li className="flex items-center text-gray-400">
+                <li className="flex items-center text-gray-200">
                   <i className="fas fa-envelope w-5 mr-2 text-primary"></i>
                   Email Us
                 </li>
-                <li className="flex items-center text-gray-400">
+                <li className="flex items-center text-gray-200">
                   <i className="fas fa-clock w-5 mr-2 text-primary"></i>
                   Mon-Sat: 9AM - 6PM
                 </li>
@@ -125,18 +125,18 @@ export default function Footer() {
         <hr className="border-gray-700 mb-8" />
         
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500 text-sm mb-4 md:mb-0">&copy; {new Date().getFullYear()} AAA Laptops & More. All rights reserved.</p>
+          <p className="text-gray-300 text-sm mb-4 md:mb-0">&copy; {new Date().getFullYear()} AAA Laptops & More. All rights reserved.</p>
           <div className="flex space-x-4">
-            <a href="#" className="text-gray-400 hover:text-primary transition-all">
+            <a href="#" className="text-gray-200 hover:text-primary transition-all">
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="#" className="text-gray-400 hover:text-primary transition-all">
+            <a href="#" className="text-gray-200 hover:text-primary transition-all">
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="#" className="text-gray-400 hover:text-primary transition-all">
+            <a href="#" className="text-gray-200 hover:text-primary transition-all">
               <i className="fab fa-yelp"></i>
             </a>
-            <a href="#" className="text-gray-400 hover:text-primary transition-all">
+            <a href="#" className="text-gray-200 hover:text-primary transition-all">
               <i className="fab fa-google"></i>
             </a>
           </div>

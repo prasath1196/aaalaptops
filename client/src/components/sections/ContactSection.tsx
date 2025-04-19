@@ -5,9 +5,9 @@ export default function ContactSection() {
     <section id="contact" className="py-20 bg-secondary text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-montserrat font-bold mb-3">Visit Us or <span className="text-primary">Contact</span></h2>
+          <h2 className="text-3xl md:text-4xl font-montserrat font-bold mb-3 text-white">Visit Us or <span className="text-primary">Contact</span></h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
-          <p className="max-w-2xl mx-auto text-gray-300 text-lg">Walk-ins welcome — no appointment needed!</p>
+          <p className="max-w-2xl mx-auto text-gray-200 text-lg">Walk-ins welcome — no appointment needed!</p>
         </div>
         
         <div className="flex flex-col lg:flex-row gap-12">
@@ -19,9 +19,9 @@ export default function ContactSection() {
                     <i className="fas fa-map-marker-alt text-white"></i>
                   </div>
                   <div>
-                    <h3 className="font-montserrat font-bold text-xl mb-2">Our Location</h3>
-                    <p className="text-gray-300">174 W McMillan St, Cincinnati, OH 45219</p>
-                    <p className="text-gray-400 text-sm mt-1">Near the University of Cincinnati</p>
+                    <h3 className="font-montserrat font-bold text-xl mb-2 text-white">Our Location</h3>
+                    <p className="text-gray-200">174 W McMillan St, Cincinnati, OH 45219</p>
+                    <p className="text-gray-300 text-sm mt-1">Near the University of Cincinnati</p>
                   </div>
                 </div>
                 
@@ -30,9 +30,9 @@ export default function ContactSection() {
                     <i className="fas fa-phone-alt text-white"></i>
                   </div>
                   <div>
-                    <h3 className="font-montserrat font-bold text-xl mb-2">Phone</h3>
-                    <p className="text-gray-300">513-221-8333</p>
-                    <p className="text-gray-400 text-sm mt-1">Mon-Sat: 9AM - 6PM</p>
+                    <h3 className="font-montserrat font-bold text-xl mb-2 text-white">Phone</h3>
+                    <p className="text-gray-200">513-221-8333</p>
+                    <p className="text-gray-300 text-sm mt-1">Mon-Sat: 9AM - 6PM</p>
                   </div>
                 </div>
                 
@@ -41,9 +41,9 @@ export default function ContactSection() {
                     <i className="fas fa-envelope text-white"></i>
                   </div>
                   <div>
-                    <h3 className="font-montserrat font-bold text-xl mb-2">Email</h3>
-                    <p className="text-gray-300">aaalaptopsandmore@yahoo.com</p>
-                    <p className="text-gray-400 text-sm mt-1">We'll respond as soon as possible</p>
+                    <h3 className="font-montserrat font-bold text-xl mb-2 text-white">Email</h3>
+                    <p className="text-gray-200">aaalaptopsandmore@yahoo.com</p>
+                    <p className="text-gray-300 text-sm mt-1">We'll respond as soon as possible</p>
                   </div>
                 </div>
               </CardContent>

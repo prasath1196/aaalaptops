@@ -7,6 +7,9 @@ export default function Navbar() {
   const [, setLocation] = useLocation();
 
   useEffect(() => {
+    // Set initial state
+    setIsScrolled(window.scrollY > 10);
+    
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
@@ -40,8 +43,8 @@ export default function Navbar() {
   };
 
   return (
-    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${isScrolled ? 'glass shadow-md' : 'bg-transparent'}`}>
-      <nav className="container mx-auto px-4 py-3 flex justify-between items-center">
+    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-black bg-opacity-25 backdrop-blur-sm'}`}>
+      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <a 
           href="#hero" 
           className="flex items-center space-x-2"
@@ -51,14 +54,14 @@ export default function Navbar() {
           }}
         >
           <span className="text-primary font-montserrat font-black text-2xl">AAA</span>
-          <span className="font-montserrat font-bold">Laptops & More</span>
+          <span className={`font-montserrat font-bold ${isScrolled ? 'text-secondary' : 'text-white'}`}>Laptops & More</span>
         </a>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
           <a 
             href="#services" 
-            className="font-montserrat font-medium hover:text-primary transition-all"
+            className={`font-montserrat font-medium hover:text-primary transition-all ${isScrolled ? 'text-gray-800' : 'text-white'}`}
             onClick={(e) => {
               e.preventDefault();
               handleNavLinkClick("services");
@@ -68,7 +71,7 @@ export default function Navbar() {
           </a>
           <a 
             href="#products" 
-            className="font-montserrat font-medium hover:text-primary transition-all"
+            className={`font-montserrat font-medium hover:text-primary transition-all ${isScrolled ? 'text-gray-800' : 'text-white'}`}
             onClick={(e) => {
               e.preventDefault();
               handleNavLinkClick("products");
@@ -78,7 +81,7 @@ export default function Navbar() {
           </a>
           <a 
             href="#about" 
-            className="font-montserrat font-medium hover:text-primary transition-all"
+            className={`font-montserrat font-medium hover:text-primary transition-all ${isScrolled ? 'text-gray-800' : 'text-white'}`}
             onClick={(e) => {
               e.preventDefault();
               handleNavLinkClick("about");
@@ -88,7 +91,7 @@ export default function Navbar() {
           </a>
           <a 
             href="#testimonials" 
-            className="font-montserrat font-medium hover:text-primary transition-all"
+            className={`font-montserrat font-medium hover:text-primary transition-all ${isScrolled ? 'text-gray-800' : 'text-white'}`}
             onClick={(e) => {
               e.preventDefault();
               handleNavLinkClick("testimonials");
@@ -98,7 +101,7 @@ export default function Navbar() {
           </a>
           <a 
             href="#contact" 
-            className="font-montserrat font-medium hover:text-primary transition-all"
+            className={`font-montserrat font-medium hover:text-primary transition-all ${isScrolled ? 'text-gray-800' : 'text-white'}`}
             onClick={(e) => {
               e.preventDefault();
               handleNavLinkClick("contact");
@@ -114,7 +117,7 @@ export default function Navbar() {
           className="md:hidden focus:outline-none"
           aria-label="Toggle mobile menu"
         >
-          <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'} text-xl`}></i>
+          <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'} text-xl ${isScrolled ? 'text-gray-800' : 'text-white'}`}></i>
         </button>
       </nav>
       
