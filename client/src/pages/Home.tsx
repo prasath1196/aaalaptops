@@ -16,10 +16,13 @@ export default function Home() {
     initParallaxEffect();
 
     // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+    document.querySelectorAll('a[href^="#"]').forEach((anchor: Element) => {
+      anchor.addEventListener('click', (e: Event) => {
         e.preventDefault();
-        const href = this.getAttribute('href');
+        
+        // Cast to HTMLAnchorElement
+        const linkElement = anchor as HTMLAnchorElement;
+        const href = linkElement.getAttribute('href');
         if (!href || href === '#') return;
         
         const targetId = href.substring(1); // Remove the # character

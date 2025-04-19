@@ -127,17 +127,21 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-white text-sm mb-4 md:mb-0">&copy; {new Date().getFullYear()} AAA Laptops & More. All rights reserved.</p>
           <div className="flex space-x-4">
-            <a href="#" className="text-white hover:text-primary transition-all">
-              <i className="fab fa-facebook-f"></i>
+            <a 
+              href="https://www.instagram.com/aaalaptopsandmore/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-white hover:text-primary transition-all"
+            >
+              <i className="fab fa-instagram text-lg"></i>
             </a>
-            <a href="#" className="text-white hover:text-primary transition-all">
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a href="#" className="text-white hover:text-primary transition-all">
-              <i className="fab fa-yelp"></i>
-            </a>
-            <a href="#" className="text-white hover:text-primary transition-all">
-              <i className="fab fa-google"></i>
+            <a 
+              href="https://www.linkedin.com/in/aaalaptops/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-white hover:text-primary transition-all"
+            >
+              <i className="fab fa-linkedin-in text-lg"></i>
             </a>
           </div>
         </div>
