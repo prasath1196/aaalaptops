@@ -1,0 +1,147 @@
+import { useLocation } from "wouter";
+
+export default function Footer() {
+  const [, setLocation] = useLocation();
+
+  const handleNavLinkClick = (sectionId: string) => {
+    // If on home page, scroll to section
+    if (window.location.pathname === '/') {
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          window.scrollTo({
+            top: element.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      }, 100);
+    } else {
+      // If not on home page, navigate to home and then scroll
+      setLocation(`/#${sectionId}`);
+    }
+  };
+
+  return (
+    <footer className="bg-secondary text-white py-12">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row justify-between mb-8">
+          <div className="mb-8 md:mb-0">
+            <div className="flex items-center space-x-2 mb-4">
+              <span className="text-primary font-montserrat font-black text-2xl">AAA</span>
+              <span className="font-montserrat font-bold">Laptops & More</span>
+            </div>
+            <p className="text-gray-400 max-w-xs">Your trusted tech repair solution in Cincinnati. Fast, reliable service at affordable prices.</p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+            <div>
+              <h3 className="font-montserrat font-bold text-lg mb-4">Quick Links</h3>
+              <ul className="space-y-2">
+                <li>
+                  <a 
+                    href="#services" 
+                    className="text-gray-400 hover:text-white transition-all"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavLinkClick("services");
+                    }}
+                  >
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#products" 
+                    className="text-gray-400 hover:text-white transition-all"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavLinkClick("products");
+                    }}
+                  >
+                    Products
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#about" 
+                    className="text-gray-400 hover:text-white transition-all"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavLinkClick("about");
+                    }}
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#testimonials" 
+                    className="text-gray-400 hover:text-white transition-all"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavLinkClick("testimonials");
+                    }}
+                  >
+                    Testimonials
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="font-montserrat font-bold text-lg mb-4">Services</h3>
+              <ul className="space-y-2">
+                <li><a href="#" className="text-gray-400 hover:text-white transition-all">Computer Repair</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-all">Virus Removal</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-all">OS Reload</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition-all">Custom Builds</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="font-montserrat font-bold text-lg mb-4">Contact</h3>
+              <ul className="space-y-2">
+                <li className="flex items-center text-gray-400">
+                  <i className="fas fa-map-marker-alt w-5 mr-2 text-primary"></i>
+                  174 W McMillan St
+                </li>
+                <li className="flex items-center text-gray-400">
+                  <i className="fas fa-phone-alt w-5 mr-2 text-primary"></i>
+                  513-221-8333
+                </li>
+                <li className="flex items-center text-gray-400">
+                  <i className="fas fa-envelope w-5 mr-2 text-primary"></i>
+                  Email Us
+                </li>
+                <li className="flex items-center text-gray-400">
+                  <i className="fas fa-clock w-5 mr-2 text-primary"></i>
+                  Mon-Sat: 9AM - 6PM
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <hr className="border-gray-700 mb-8" />
+        
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <p className="text-gray-500 text-sm mb-4 md:mb-0">&copy; {new Date().getFullYear()} AAA Laptops & More. All rights reserved.</p>
+          <div className="flex space-x-4">
+            <a href="#" className="text-gray-400 hover:text-primary transition-all">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" className="text-gray-400 hover:text-primary transition-all">
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a href="#" className="text-gray-400 hover:text-primary transition-all">
+              <i className="fab fa-yelp"></i>
+            </a>
+            <a href="#" className="text-gray-400 hover:text-primary transition-all">
+              <i className="fab fa-google"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
