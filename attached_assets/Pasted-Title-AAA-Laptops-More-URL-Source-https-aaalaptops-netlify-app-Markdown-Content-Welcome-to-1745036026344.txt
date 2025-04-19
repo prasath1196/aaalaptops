@@ -1,0 +1,111 @@
+Title: AAA Laptops & More
+
+URL Source: https://aaalaptops.netlify.app/
+
+Markdown Content:
+Welcome to AAA Laptops & More
+-----------------------------
+
+**Located in the heart of Clifton near the University of Cincinnati**, AAA Laptops & More is your go-to tech repair and computer shop. Whether you need a quick fix, an affordable device, or a custom build, Tony’s got your back!
+
+### Popular Services
+
+*   **Labor:** $65/hr – Fast turnaround with FREE quotes & estimates
+*   **Reload Computer:** $89
+*   **Virus Removal:** $89
+*   **Reconditioned Laptops:** Starting at $250
+*   **Monitors:** Starting at $59
+*   **Mouse:** $15 | **Wireless Mouse:** $20
+*   **Wireless Keyboard:** $20
+
+### Visit Us or Contact
+
+📍 **174 W McMillan St, Cincinnati, OH 45219**  
+📞 **513-221-8333**  
+📧 **aaalaptopsandmore@yahoo.com**  
+🔧 Walk-ins welcome — no appointment needed!
+
+[See Full Product List](https://aaalaptops.netlify.app/elements)
+
+
+Title: About - AAA Laptops
+
+URL Source: https://aaalaptops.netlify.app/generic
+
+Markdown Content:
+Founded by Tony, a certified technician with decades of experience, AAA Laptops & More is dedicated to fast, reliable, and affordable service. We specialize in supporting students, small businesses, and locals who value honest work at great prices.
+
+### What Sets Us Apart
+
+*   ✅ Free quotes and speedy repairs
+*   ✅ Affordable certified pre-owned tech
+*   ✅ Custom PC builds, software reloads, and virus removal
+
+### Certifications
+
+*   **Apple Repair Certified**
+*   IBM, Lenovo, HP, Asus, MSI Certified
+
+### Photo Gallery
+
+![Image 1: Laptop](https://aaalaptops.netlify.app/images/laptop.jpg) ![Image 2: Mouse](https://aaalaptops.netlify.app/images/mouse.jpg) ![Image 3: Keyboard](https://aaalaptops.netlify.app/images/keyboard.jpg)
+
+### What Customers Say
+
+> "Tony was extremely helpful. The shop has a welcoming atmosphere, and I highly recommend their service!" – Paige W.
+
+> "AAA Laptops & More is first-class! I bought a great pre-owned laptop loaded with software. Highly recommend!" – Ken S.
+
+
+Title: Services - AAA Laptops
+
+URL Source: https://aaalaptops.netlify.app/elements
+
+Markdown Content:
+Products & Services
+-------------------
+
+![Image 1: Laptop](https://aaalaptops.netlify.app/images/laptop.jpg)
+
+**Laptops**  
+From $250
+
+![Image 2: Mouse](https://aaalaptops.netlify.app/images/mouse.jpg)
+
+**Mouse**  
+$15
+
+![Image 3: Wireless Mouse](https://aaalaptops.netlify.app/images/wireless-mouse.jpg)
+
+**Wireless Mouse**  
+$20
+
+![Image 4: Keyboard](https://aaalaptops.netlify.app/images/keyboard.jpg)
+
+**Wireless Keyboard**  
+$20
+
+![Image 5: Monitor](https://aaalaptops.netlify.app/images/monitor.jpg)
+
+**Monitors**  
+From $59
+
+![Image 6: Charger](https://aaalaptops.netlify.app/images/charger.jpg)
+
+**Chargers**  
+$10–$30
+
+### Repair Services
+
+*   **Reload Computer:** $89
+*   **Virus Removal:** $89
+*   **Labor:** $65/hr (Free Estimates)
+
+
+
+use this content to develop a simple website that I can deploy in netlify. 
+
+USe parallax scrolling. 
+Use red white black theme 
+
+Make it modern. styling and attractive, with professional transition.  Be Creative, but website needs to be smooth to use. Develop mobile responsive version 
