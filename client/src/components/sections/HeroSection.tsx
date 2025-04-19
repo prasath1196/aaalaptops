@@ -47,7 +47,7 @@ export default function HeroSection() {
             </Button>
             <Button 
               onClick={() => handleNavLinkClick("contact")}
-              className="bg-white hover:bg-gray-100 text-secondary font-montserrat font-bold py-3 px-8 rounded-lg text-center transition-all shadow-lg"
+              className="bg-gray-900 hover:bg-gray-800 text-white font-montserrat font-bold py-3 px-8 rounded-lg text-center transition-all shadow-lg"
             >
               Contact Us
             </Button>

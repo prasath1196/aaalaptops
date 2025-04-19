@@ -30,7 +30,7 @@ export default function CallToAction() {
           </Button>
           <Button 
             onClick={() => handleNavLinkClick("contact")}
-            className="bg-secondary text-white font-montserrat font-bold py-3 px-8 rounded-lg inline-flex items-center justify-center transition-all hover:bg-gray-800"
+            className="bg-gray-900 text-white font-montserrat font-bold py-3 px-8 rounded-lg inline-flex items-center justify-center transition-all hover:bg-gray-800"
           >
             <i className="fas fa-map-marker-alt mr-2"></i> Get Directions
           </Button>

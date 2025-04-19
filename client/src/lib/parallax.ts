@@ -82,7 +82,7 @@ export function initParallaxEffect() {
     /* Color variables */
     :root {
       --color-primary: #E30613;
-      --color-secondary: #222222;
+      --color-secondary: #111111;
       --color-light: #F8F8F8;
     }
   `;

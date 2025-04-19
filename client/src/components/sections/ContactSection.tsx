@@ -2,12 +2,12 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-20 bg-secondary text-white">
+    <section id="contact" className="py-20 bg-gray-900 text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-montserrat font-bold mb-3 text-white">Visit Us or <span className="text-primary">Contact</span></h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
-          <p className="max-w-2xl mx-auto text-gray-200 text-lg">Walk-ins welcome — no appointment needed!</p>
+          <p className="max-w-2xl mx-auto text-white text-lg">Walk-ins welcome — no appointment needed!</p>
         </div>
         
         <div className="flex flex-col lg:flex-row gap-12">

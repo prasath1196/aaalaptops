@@ -20,13 +20,14 @@ export default function Home() {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const href = this.getAttribute('href');
-        if (!href) return;
+        if (!href || href === '#') return;
         
-        const target = document.querySelector(href);
+        const targetId = href.substring(1); // Remove the # character
+        const target = document.getElementById(targetId);
         if (!target) return;
 
         window.scrollTo({
-          top: (target as HTMLElement).offsetTop - 80, // Adjusting for fixed header
+          top: target.offsetTop - 80, // Adjusting for fixed header
           behavior: 'smooth'
         });
       });
