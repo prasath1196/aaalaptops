@@ -15,24 +15,32 @@ export default function Home() {
     // Initialize parallax scrolling effect
     initParallaxEffect();
 
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach((anchor: Element) => {
+    // Handle smooth scrolling ONLY for internal anchor links
+    document.querySelectorAll('a').forEach((anchor: Element) => {
       anchor.addEventListener('click', (e: Event) => {
-        e.preventDefault();
-        
         // Cast to HTMLAnchorElement
         const linkElement = anchor as HTMLAnchorElement;
         const href = linkElement.getAttribute('href');
-        if (!href || href === '#') return;
         
-        const targetId = href.substring(1); // Remove the # character
-        const target = document.getElementById(targetId);
-        if (!target) return;
-
-        window.scrollTo({
-          top: target.offsetTop - 80, // Adjusting for fixed header
-          behavior: 'smooth'
-        });
+        // Skip if no href
+        if (!href) return;
+        
+        // ONLY prevent default and apply smooth scrolling for internal anchor links
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          
+          if (href === '#') return; // Skip if it's just "#"
+          
+          const targetId = href.substring(1); // Remove the # character
+          const target = document.getElementById(targetId);
+          if (!target) return;
+  
+          window.scrollTo({
+            top: target.offsetTop - 80, // Adjusting for fixed header
+            behavior: 'smooth'
+          });
+        }
+        // For all other links (external, etc.), let the default behavior happen
       });
     });
 
